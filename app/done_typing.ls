@@ -1,23 +1,18 @@
-jQuery |> ($) ->
-  $.fn.typing = (options) ->
-    this.each (i, elem) !->
-      listenToTyping elem, options
+$, undefined <-! (<| jQuery)
+plugin = \watchTyping
+$.fn[plugin] = (opt) ->
+  opt = $.extend {}, $.fn[plugin].dft, opt
+  timer = 0
+  <-! @each
+  $el = $ @
+  .blur !-> stop-typing it, 0
+  .keydown !-> opt.start it, $el if opt.start
+  .keyup !-> stop-typing it, opt.delay
 
-  listenToTyping = (elem, options) ->
-    settings = $.extend start:null stop:null delay:400
-      ,options
+  stop-typing = (event, delay) !->
+    clear-timeout timer
+    timer := set-timeout (-> opt.stop event, $el if opt.stop), delay
 
-    $elem = $(elem)
-    startTyping = (event) !->
-      if settings.start then settings.start event, $elem
-
-    stopTyping = (event, delay) !->
-    clearTimeout delayedCallback
-    delayedCallback = setTimeout -> if settings.stop then settings.stop event, $elem
-      ,if delay >= 0 then delay else settings.delay
-
-    $elem.keydown startTyping
-    $elem.keyup stopTyping
-    $elem.blur (event) !-> stopTyping event,0
+$.fn[plugin].dft = delay: 400
 
 # vi:et

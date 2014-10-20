@@ -2,7 +2,7 @@ require! <[gulp main-bower-files gulp-concat gulp-filter gulp-jade gulp-liverelo
 require! \fs
 
 port = parseInt(fs.readFileSync('port'));
-tiny-lr-port = 35730
+tiny-lr-port = 35729
 
 paths =
   app: \app
