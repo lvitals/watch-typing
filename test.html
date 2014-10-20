@@ -1,0 +1,16 @@
+
+<input type="text">
+<script src="jquery-2.1.1.min.js"></script>
+<script src="done_typing.js"></script>
+<script>
+$(':text').typing({
+start: function (event, $elem) {
+$elem.css('background', '#fa0');
+},
+stop: function (event, $elem) {
+$elem.css('background', '#f00');
+},
+delay: 4000
+});
+</script>
+
