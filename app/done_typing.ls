@@ -1,4 +1,4 @@
-$, undefined <-! (<| jQuery)
+$ <- -> it jQuery
 plugin = \watchTyping
 $.fn[plugin] = (opt) ->
   opt = $.extend {}, $.fn[plugin].dft, opt
