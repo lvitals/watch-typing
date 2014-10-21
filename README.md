@@ -6,6 +6,6 @@ This plugin is for watching the typing action whether the input is ready to be u
     npm i
     echo 2344 > port
     npm start
-## Links
+## Reference
     https://github.com/narfdotpl/jquery-typing
     https://github.com/dennyferra/TypeWatch
