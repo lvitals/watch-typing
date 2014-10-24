@@ -1,4 +1,4 @@
-require! <[gulp main-bower-files gulp-concat gulp-filter gulp-jade gulp-livereload gulp-livescript gulp-markdown gulp-print gulp-rename gulp-stylus gulp-util streamqueue tiny-lr]>
+require! <[gulp main-bower-files gulp-concat gulp-filter gulp-jade gulp-livereload gulp-livescript gulp-stylus gulp-util streamqueue tiny-lr]>
 require! \fs
 
 port = parseInt(fs.readFileSync('port'));
