@@ -3,7 +3,25 @@
   "dependencies": {
     "jquery": "~2.0.3"
   },
+  "ignore": [
+  	"port",
+	"public/",
+	"node_modules",
+	"bower_components"
+  ],
+  "main": [
+  	"index.html",
+	"watch-typing.ls"
+  ],
+  "keywords": "watchTyping",
+  "authors": [
+  	"Tien-Hao Chang <darby@mail.ncku.edu.tw>",
+	"Wonder Chang <wnd2cyc@gmail.com>",
+	"Yu-Ting Tseng <a5520592@hotmail.com>"
+  ],
+  "license": "MIT",
   "overrides": {
   },
+  "description": "watch-typing",
   "version": "0.0.1"
 }
