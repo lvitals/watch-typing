@@ -21,20 +21,21 @@ gulp.task \css ->
     .pipe livereload!
 
 gulp.task \html ->
-  jade = gulp.src paths.app+\/**/*.jade .pipe gulp-jade {+pretty}
+  jade = gulp.src \*.jade .pipe gulp-jade {+pretty}
+  html = gulp.src \index.html
   streamqueue {+objectMode}
-    .done jade
+    .done jade, html
     .pipe gulp.dest paths.build
     .pipe livereload!
 
 gulp.task \js ->
   js-bower = gulp.src main-bower-files! .pipe gulp-filter \*.js
-  streamqueue {+objectMode}
-    .done js-bower
-    .pipe gulp-concat \app.js
+  ls-app = gulp.src [\watch-typing.ls, \index.ls] .pipe gulp-livescript {+bare}
     .pipe gulp.dest paths.build
     .pipe livereload!
-  gulp.src paths.app+\/**/*.ls .pipe gulp-livescript {+bare}
+  streamqueue {+objectMode}
+    .done js-bower, ls-app
+    .pipe gulp-concat \app.js
     .pipe gulp.dest paths.build
     .pipe livereload!
 
