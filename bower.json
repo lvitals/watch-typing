@@ -4,24 +4,26 @@
     "jquery": "~2.0.3"
   },
   "ignore": [
-  	"port",
-	"public/",
-	"node_modules",
-	"bower_components"
+  	"**/.*",
+	"port"
   ],
   "main": [
-  	"index.html",
 	"watch-typing.ls"
   ],
-  "keywords": "watchTyping",
+  "keywords": [
+  	"watch-typing",
+	"watch",
+	"listen",
+	"type",
+	"typing"
+  ],
   "authors": [
   	"Tien-Hao Chang <darby@mail.ncku.edu.tw>",
 	"Wonder Chang <wnd2cyc@gmail.com>",
 	"Yu-Ting Tseng <a5520592@hotmail.com>"
   ],
   "license": "MIT",
-  "overrides": {
-  },
-  "description": "watch-typing",
-  "version": "0.0.1"
+  "description": "This plugin is for watching the typing action whether the input is ready to be used or not.",
+  "homepage": "https://github.com/mbilab/watch-typing",
+  "provate": "true"
 }
