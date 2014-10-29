@@ -1,6 +1,6 @@
 # watch-typing
 
-This plugin is for watching the typing action whether the input is ready to be used or not.
+This plugin is for watching the typing action whether the input is ready to be used or not.[(Try it)](http://merry.ee.ncku.edu.tw/~yuting/watch-typing/)
 
 ## Install
 
@@ -54,14 +54,11 @@ $(':text').watchTyping({
 When pressing the key, the textarea turns orange. 
 0.4 seconds later, the testarea turns red.
 
-## DEMO
-
-[Try it](http://merry.ee.ncku.edu.tw/~yuting/watch-typing/)
-
 
 ## Reference
 
 https://github.com/narfdotpl/jquery-typing
+
 https://github.com/dennyferra/TypeWatch
 
 ## LICENSE(MIT)
