@@ -56,7 +56,7 @@ When pressing the key, the textarea turns orange.
 
 ## DEMO
 
-	[Try it](http://merry.ee.ncku.edu.tw/~yuting/watch-typing/)
+[Try it](http://merry.ee.ncku.edu.tw/~yuting/watch-typing/)
 
 
 ## Reference
