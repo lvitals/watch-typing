@@ -45,5 +45,5 @@
     "start": "node_modules/.bin/gulp --require LiveScript watch",
     "watch": "node_modules/.bin/gulp --require LiveScript watch"
   },
-  "license": "MIT",
+  "license": "MIT"
 }
