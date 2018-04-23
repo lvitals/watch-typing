@@ -2,7 +2,7 @@
   "name": "watch-typing",
   "description": "This plugin is for watching the typing action whether the input is ready to be used or not.",
   "main": "watch-typing.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "keywords": [
   	"watch",
