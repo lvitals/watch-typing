@@ -4,13 +4,13 @@ This plugin is for watching the typing action whether the input is ready to be u
 
 ## Install
 
-Installing via bower
+Installing via npm
  
-`bower install watch-typing`
+`npm install watch-typing`
 
 Installing via github
 
-`git clone git@github.com:mbilab/watch-typing.git`
+`git clone git@github.com:lvitals/watch-typing.git`
 	
 
 ## Usage
@@ -64,4 +64,5 @@ https://github.com/dennyferra/TypeWatch
 ## LICENSE(MIT)
 
 Copyright (C) 2014 Tien-Hao Chang darby@mail.ncku.edu.tw
+Copyright (C) 2018 Leandro Vital leavitals@gmail.com
 
