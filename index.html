@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="text">
+  <script src="app.js"></script>
+  <script src="watch-typing.js"></script>
+  <script>  
+$(':text').watchTyping({
+  start: function(event, $elem){
+    return $elem.css('background', '#fa0');
+  },
+  stop: function(event, $elem){
+    return $elem.css('background', '#f00');
+  },
+  delay: 400
+});
+  </script>
+</body>
+</html>
